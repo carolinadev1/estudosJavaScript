@@ -1,0 +1,112 @@
+/* -------------------- GLOBAL -------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------- CORPO -------------------------------- */
+
+body {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------- TÍTULOS ------------------------------ */
+
+h2 {
+    font-size: 1.5em;
+    color: #ffcc00; /* Cor dourada */
+    text-align: center;
+}
+
+/* --------------------- IMAGENS E BOTÕES ---------------------- */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre elementos */
+    margin: 20px 0; /* Margem vertical */
+}
+
+.responsive-img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* ---------------------- BOTÕES ----------------------- */
+
+.button style{
+    background-color: white; 
+    align-items: center;
+    color: black; 
+    padding: 10px 20px;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: 0.3s ease;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-ver-personagem {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: black;
+}
+
+/* ------------------------- PASSAR O BOTÕES NO MOUSE -------------- */
+.btn-ver-personagem:hover {
+    background-color: #ff4800;
+    color: white;
+}
+
+.btn-ver-personagem:active {
+    box-shadow:black; /* Sombra reduzida */
+    transform: scale(0.95); /* Efeito de clique */
+}
+
+/* ----------------------------FOOTER ------------------------ */
+footer {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer .redes-sociais a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .redes-sociais a:hover {
+    color: #ffcc00;
+}
+
+
+/* ----------------------------- RESPONSIVIDADE -------------------------- */
+@media (max-width: 768px) {
+    .content-wrapper {
+        gap: 15px;
+    }
+
+    .btn-ver-personagem {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,254 @@
+/* ===================== GLOBAL ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+    color: white;
+}
+
+/* ===================== LOGO ===================== */
+
+.logo {
+   width: 20px;
+    display: flex;
+    justify-content: flex-start; /* Alinha à esquerda */
+    align-items: end; /* Centraliza verticalmente */ 
+}
+
+/* ===================== HEADER ===================== */
+header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo img {
+    width: 150px;
+    height: auto;
+    display: inline-block;
+}
+
+.interface h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.btn-container .btn-continuar {
+    background-color: rgb(35, 38, 78);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-container .btn-continuar:hover {
+    background-color: red;
+}
+
+/* ===================== NAVEGAÇÃO ===================== */
+.navegacao ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.navegacao a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navegacao a:hover {
+    background-color: blue;
+    color: #ffcc00;
+}
+
+/* ===================== HERO ===================== */
+.hero {
+    background-color: black; /* a cor de fundo do "bem vindo ao mundo mistério"*/
+    padding: 20px;  /* espaçamento dentro do elemento */
+    margin-top: 30px; /* "espaçamento do hero, MUDAR a parte de FORA. do "bem vindo ao mundo" */ 
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem; /*  */
+    margin-bottom: 25px; /* espaçamento de FORA do "bem vindo ao mundo", na DO TEXTO */
+}
+
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.btn-banner {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-banner:hover {
+    background-color: darkred;
+}
+
+/* ===================== TITULOS===================== */ 
+
+h1 {
+    text-align: center; /* Alinha o texto horizontalmente no centro */
+    margin: 0 auto;     /* Garante que o elemento tenha uma margem automática para centralização */
+    max-width: 800px;   /* Limita a largura do título */
+    padding: 20px;      /* Espaçamento interno */
+}
+
+h2 { 
+    text-align: center; /* Alinha o texto horizontalmente no centro */
+    margin: 0 auto;     /* Garante que o elemento tenha uma margem automática para centralização */
+    max-width: 800px;   /* Limita a largura do título */
+    padding: 20px;      /* Espaçamento interno */
+}
+
+h3 {
+    text-align: center; /* Alinha o texto horizontalmente no centro */
+    margin: 0 auto;     /* Garante que o elemento tenha uma margem automática para centralização */
+    max-width: 800px;   /* Limita a largura do texto (opcional) */
+    padding: 20px;
+}
+
+
+/* ===================== CARDS ===================== */
+.catalogo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* ===================== BANNER ===================== */
+.banner {
+    background-image: url('img/ordem.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* ===================== CONTEUDO ===================== */
+
+.content {
+    margin: 40px 20px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center; /* Centraliza o texto */
+}
+
+
+/* ===================== FOOTER ===================== */
+footer {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer .redes-sociais a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .redes-sociais a:hover {
+    color: #ffcc00;
+}
+
+/* ===================== IMG RESPONSIVA===================== */ 
+img.responsive-img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media screen and (max-width: 768px) {
+    .interface h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn-container .btn-continuar {
+        width: 100%;
+    }
+
+    .navegacao ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .catalogo-container .card {
+        width: 100%;
+    }
+}
